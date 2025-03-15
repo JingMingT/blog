@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.location {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem 0;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-transform: none;
+    width: 100%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 4rem 0;
+    perspective: 1000px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    width: 220px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    position: relative;
+    opacity: 0; /* 初始透明度为0，通过JS动画显示 */
+}
+
+.card:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.card:nth-child(2) {
+    transform: translateY(-20px);
+}
+
+.card:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    z-index: 20;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+    text-align: center;
+    margin: 5rem 0 3rem;
+    width: 100%;
+}
+
+.title h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.3;
+    text-transform: none;
+    letter-spacing: -1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.title h2:last-child {
+    margin-bottom: 0;
+}
+
+.clients {
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.clients-title {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.clients-list {
+    font-size: 1rem;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+    text-transform: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* 动画效果 */
+.animate-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+/* 页面加载完成后的状态 */
+body.loaded .animate-text {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+@media (max-width: 992px) {
+    .name {
+        font-size: 6rem;
+    }
+    
+    .title h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 4rem;
+    }
+    
+    .title h2 {
+        font-size: 2.5rem;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .card {
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(3) {
+        transform: none;
+    }
+} 

@@ -1,0 +1,237 @@
+/* 文章详情页样式 */
+
+/* 主要内容区域 */
+.article-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+/* 返回按钮 */
+.article-nav {
+    margin-bottom: 2rem;
+}
+
+.back-to-articles {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-secondary, #a0a0a0);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-to-articles:hover {
+    color: var(--text-primary, #ffffff);
+}
+
+/* 文章内容样式 */
+.article-content {
+    color: var(--text-primary, #e0e0e0);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    width: 100%;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.article-meta {
+    color: var(--text-secondary, #a0a0a0);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* 图片和图片说明 */
+.article-figure {
+    margin: 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.article-figure img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px var(--shadow-color, rgba(0, 0, 0, 0.2));
+}
+
+.article-figure figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary, #a0a0a0);
+    font-style: italic;
+}
+
+/* 特色图片（文章开头的大图） */
+.article-figure-featured {
+    margin: 2rem -2rem;
+    width: 110%;
+}
+
+/* 宽屏图片 */
+.article-figure-wide {
+    margin: 2rem 0;
+}
+
+/* 多图并排 */
+.article-figure-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.article-figure-grid img {
+    max-width: calc(50% - 0.5rem);
+    flex: 1 1 300px;
+}
+
+/* 文章列表 */
+.article-list {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.article-list li {
+    margin-bottom: 0.8rem;
+}
+
+/* 引用样式 */
+.article-quote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-accent, #ffcc00);
+    background-color: var(--card-background, rgba(255, 255, 255, 0.05));
+    font-style: italic;
+    position: relative;
+}
+
+/* 相关文章 */
+.article-related {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    background-color: var(--card-background, rgba(255, 255, 255, 0.05));
+    border-radius: 8px;
+}
+
+.article-related h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.article-related a {
+    color: var(--text-primary, #e0e0e0);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.article-related a:hover {
+    color: #ffcc00;
+}
+
+/* 高亮文本 */
+.article-highlight {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--card-background, rgba(255,255,255,0.05)), var(--card-hover-background, rgba(255,255,255,0.1)));
+    border-radius: 8px;
+    text-align: center;
+}
+
+.article-highlight p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* 作者信息 */
+.article-author {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    background-color: var(--card-background, rgba(255, 255, 255, 0.05));
+    border-radius: 8px;
+}
+
+.author-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    border: 2px solid #ffcc00;
+}
+
+.author-info h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.author-info p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.author-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.author-social a {
+    color: var(--text-secondary, #a0a0a0);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.author-social a:hover {
+    color: var(--text-primary, #ffffff);
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .article-main {
+        padding: 2rem 1rem;
+    }
+    
+    .article-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-main {
+        padding: 1rem;
+    }
+    
+    .article-title {
+        font-size: 1.8rem;
+    }
+    
+    .article-figure-grid img {
+        max-width: 100%;
+    }
+    
+    .article-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .author-social {
+        justify-content: center;
+    }
+} 

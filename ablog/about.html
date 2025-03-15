@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional.css">
+    <link rel="icon" type="image/png" href="image/image 6.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="location">
+                <div class="location-text animate-text">杭州, 中国</div>
+                <div class="email animate-text">THSDYX@QQ.COM</div>
+            </div>
+            <div class="avatar">
+                <img src="image/image 6.png" alt="Spencer Gabor">
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="animate-text">首页</a></li>
+                <li><a href="articles.html" class="animate-text">文章</a></li>
+                <li><a href="projects.html" class="animate-text">项目集</a></li>
+                <li><a href="about.html" class="animate-text nav-active">关于我</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 class="page-title animate-text">关于我</h1>
+            
+            <div class="about-interactive">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="image/image 6.png" alt="个人照片">
+                        </div>
+                        <div class="profile-intro">
+                            <h2 class="animate-text">你好，我是</h2>
+                            <h3 class="animate-text typewriter">爱折腾的产品经理</h3>
+                            <p class="animate-text">喜欢研究商业模式、捣鼓AI，专注于如何让信用产品扩大影响面，服务尽可能多的商业场景与用户</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs-container">
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="experience">工作经历</button>
+                            <button class="tab-btn" data-tab="education">教育背景</button>
+                            <button class="tab-btn" data-tab="skills">技能专长</button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="experience">
+                                <div class="experience-timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2023年9月至今</div>
+                                        <div class="timeline-content">
+                                            <h3>产品经理 | 支付宝芝麻信用</h3>
+                                            <p>负责芝麻先享与芝麻任务营销产品，迭代了芝麻先享产品的用户增长能力，并设计了芝麻任务营销产品以期为信用产品带来第二增长点</p>
+                                            <div class="achievement">
+                                                <span class="achievement-label">成绩:</span>
+                                                <span class="achievement-value">建设完整的用户增长方法</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2021年6月-2023年5月</div>
+                                        <div class="timeline-content">
+                                            <h3>产品运营 | 支付宝芝麻信用</h3>
+                                            <p>负责过芝麻工作证的产品运营，聚焦在智能简历+直播招聘项目。积攒了流量运营的经验与活动运营的方法并正确实践</p>
+                                            <div class="achievement">
+                                                <span class="achievement-label">成绩:</span>
+                                                <span class="achievement-value">活动运营卷入百万级流量</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2018年-2021年</div>
+                                        <div class="timeline-content">
+                                            <h3>兼职教师</h3>
+                                            <p>浙江中学科学教师，累计授课时长700余小时，试听课续费的学生，成绩均取得提升</p>
+                                            <div class="achievement">
+                                                <span class="achievement-label">成就:</span>
+                                                <span class="achievement-value">100%家长好评度，多位家长在孩子上高中后仍然请求辅导</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="education">
+                                <div class="education-cards">
+                                    <div class="edu-card">
+                                        <div class="edu-icon">
+                                            <i class="edu-bachelor"></i>
+                                        </div>
+                                        <div class="edu-details">
+                                            <h3>工商管理 | 海南大学</h3>
+                                            <div class="edu-year">2018年-2022年</div>
+                                            <p>主修消费者行为，市场分析。熟练使用SPSS等数据分析工具，并擅长使用python写爬虫获取信源</p>
+                                            <div class="edu-highlight">
+                                                <span>优秀毕业论文</span>
+                                                <span>三好学生</span>
+                                                <span>校辩论赛冠军</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="skills">
+                                <div class="skills-radar">
+                                    <div class="skill-category">
+                                        <h3>产品管理</h3>
+                                        <div class="skill-bars">
+                                            <div class="skill-item">
+                                                <span class="skill-name">需求分析与管理</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">用户故事编写</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">产品路线图规划</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 80%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">敏捷开发方法论</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-category">
+                                        <h3>设计与研究</h3>
+                                        <div class="skill-bars">
+                                            <div class="skill-item">
+                                                <span class="skill-name">用户研究与访谈</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">原型设计</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">用户体验设计</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 80%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">A/B测试</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-category">
+                                        <h3>工具与技术</h3>
+                                        <div class="skill-bars">
+                                            <div class="skill-item">
+                                                <span class="skill-name">Figma / Sketch</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">JIRA / Confluence</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">Google Analytics</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 80%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <span class="skill-name">SQL / 数据分析</span>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <div class="theme-switcher" title="切换主题">
+        <svg class="theme-icon light-mode-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5M17.6859 17.69L18.5 18.5M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="theme-icon dark-mode-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="theme-switcher.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 标签页切换
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 移除所有活动状态
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // 添加当前活动状态
+                    this.classList.add('active');
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // 打字机效果
+            const typewriterText = document.querySelector('.typewriter');
+            const text = typewriterText.textContent;
+            typewriterText.textContent = '';
+            
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    typewriterText.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            setTimeout(typeWriter, 1000);
+            
+            // 技能条动画
+            const skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(level => {
+                const width = level.style.width;
+                level.style.width = '0';
+                
+                setTimeout(() => {
+                    level.style.transition = 'width 1s ease-in-out';
+                    level.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html> 
